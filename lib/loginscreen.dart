@@ -1,3 +1,4 @@
+import 'package:doanmyphamflutter/signupscreen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -66,7 +67,17 @@ class _LoginState extends State<Login>{
               ),
             ),
           ),
-          ElevatedButton(onPressed: (){}, child:const Text("Đăng nhập",))
+          ElevatedButton(onPressed: (){}, child:const Text("Đăng nhập",)),
+          SizedBox(height: 20),
+          ElevatedButton(onPressed: (){
+
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SignupScreen(), // Thay LoginScreen bằng tên màn hình muốn chuyển đến
+              )
+            );
+          },
+              child:const Text("Đăng ký",)),
         ],
       ),
     );

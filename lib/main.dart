@@ -1,7 +1,7 @@
 import 'package:doanmyphamflutter/loginscreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:doanmyphamflutter/signupscreen.dart';
 import 'homescreen.dart';
 
 void main() {
